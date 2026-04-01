@@ -17,6 +17,26 @@
     <meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
     <meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
 
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '942056364896696');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=942056364896696&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -247,6 +267,22 @@
     <section class="section section-gray" id="comprar" style="padding-top: 40px; padding-bottom: 40px;">
         <div class="container container-tight" style="background: transparent;">
 
+            <div class="guarantee-card">
+                <div class="guarantee-icon">
+                    <svg viewBox="0 0 24 24" width="100" height="100" fill="var(--pink)"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2L15 4.5L18.5 4.5L19 8L22 10.5L20 13.5L21.5 17L18 18.5L17 22L13.5 21L12 23.5L10.5 21L7 22L6 18.5L2.5 17L4 13.5L2 10.5L5 8L5.5 4.5L9 4.5L12 2Z"
+                            fill="var(--pink)" />
+                        <circle cx="12" cy="13" r="5" fill="#fff" />
+                        <text x="12" y="14" fill="var(--pink)" font-size="5" font-weight="900" text-anchor="middle"
+                            font-family="Arial">7 DIAS</text>
+                    </svg>
+                </div>
+                <p>Se por qualquer motivo você achar que o conteúdo não valeu a pena, é só pedir o reembolso.</p>
+                <p><strong>Simples assim.</strong></p>
+            </div>
+
             <div class="pricing-wrapper">
 
                 <!-- Card 1 -->
@@ -398,19 +434,12 @@
             gtag("set", "developer_id.dZTNiMT", true);
             gtag("config", "GT-TNPQ3Z5N");
             gtag("config", "AW-18006594144");
-
-            // Facebook Pixel
-            !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s) }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '478677501286607');
-            fbq('track', 'PageView');
         };
 
         // Load after interaction or 3 seconds
         ['scroll', 'mousemove', 'touchstart', 'click'].forEach(evt => document.addEventListener(evt, loadTracking, { once: true }));
         setTimeout(loadTracking, 3000);
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=478677501286607&ev=PageView&noscript=1" /></noscript>
 </body>
 
 </html>
