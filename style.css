@@ -1,0 +1,229 @@
+:root {
+    --purple: #851AA4;
+    --yellow: #FFE80C;
+    --gray: #F6F6F6;
+    --black: #000000;
+    --btn-green: #0CC625;
+    --container-width: 800px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    color: #fff;
+    line-height: 1.5;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-purple { background-color: var(--purple); }
+.section-yellow { background-color: var(--yellow); }
+.section-gray { background-color: var(--gray); }
+.section-black { background-color: var(--black); }
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container-tight { padding: 0 15px; }
+.container-tight-bonus { padding: 15px; }
+
+/* Global Button Styles */
+.cta-button {
+    background-color: var(--btn-green);
+    color: #fff;
+    text-decoration: none;
+    font-size: 31px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 41px;
+    padding: 22px 80px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    display: inline-block;
+    z-index: 10;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cta-button:hover {
+    filter: brightness(1.1);
+}
+
+.cta-buy {
+    font-size: 31px;
+}
+
+/* Specific Adjustments based on original CSS */
+#header .cta-button {
+    margin-top: -185px;
+    padding: 15px 100px;
+}
+
+#praquem .cta-button {
+    margin-top: -32px;
+}
+
+.margin-top-btn {
+    margin-top: -32px;
+}
+
+#comprar .cta-button {
+    margin-top: -20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 40px;
+}
+
+.negative-margin {
+    margin-top: -30px;
+}
+
+.negative-margin-btn {
+    margin-top: -40px;
+}
+
+.negative-margin-bonus {
+    margin-top: -40px;
+}
+
+.negative-margin-bonus-lg {
+    margin-top: -55px;
+}
+
+.spacer-top {
+    padding-top: 50px;
+}
+
+.spacer-bottom {
+    padding-bottom: 50px;
+}
+
+/* Reviews overlapping */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.review-img {
+    margin-top: -28px;
+}
+.review-img:first-child {
+    margin-top: 0;
+}
+
+/* Swiper Styles */
+.swiper {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff !important;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    transform: scale(0.7);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-anim {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    #header .cta-button {
+        margin-top: -139px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-button {
+        font-size: 19px;
+        padding: 15px 30px;
+        border-radius: 35px;
+    }
+
+    .cta-buy {
+        font-size: 28px;
+    }
+
+    #header .cta-button {
+        margin-top: -88px;
+        font-size: 20px;
+        padding: 15px 60px;
+    }
+
+    .spacer-top, .spacer-bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Adjust overlapping margins slightly for mobile */
+    .negative-margin { margin-top: -15px; }
+    .negative-margin-btn { margin-top: -20px; }
+    .negative-margin-bonus { margin-top: -20px; }
+    .negative-margin-bonus-lg { margin-top: -30px; }
+    
+    .reviews .review-img { margin-top: -15px; }
+    .reviews .review-img:first-child { margin-top: 0; }
+}
+
+@media (max-width: 480px) {
+    #header .hero-img {
+        margin-top: -41px;
+        padding: 10px;
+    }
+    #header .cta-button {
+        padding: 15px 40px;
+    }
+}
