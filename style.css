@@ -35,10 +35,21 @@ body {
     overflow: hidden;
 }
 
-.section-purple { background-color: var(--purple); }
-.section-yellow { background-color: var(--yellow); }
-.section-gray { background-color: var(--gray); }
-.section-black { background-color: var(--black); }
+.section-purple {
+    background-color: var(--purple);
+}
+
+.section-yellow {
+    background-color: var(--yellow);
+}
+
+.section-gray {
+    background-color: var(--gray);
+}
+
+.section-black {
+    background-color: var(--black);
+}
 
 .container {
     width: 100%;
@@ -50,8 +61,13 @@ body {
     position: relative;
 }
 
-.container-tight { padding: 0 15px; }
-.container-tight-bonus { padding: 15px; }
+.container-tight {
+    padding: 0 15px;
+}
+
+.container-tight-bonus {
+    padding: 15px;
+}
 
 /* Global Button Styles */
 .cta-button {
@@ -63,7 +79,7 @@ body {
     text-align: center;
     border-radius: 41px;
     padding: 22px 80px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     display: inline-block;
     z-index: 10;
     transition: transform 0.2s ease, filter 0.2s ease;
@@ -134,9 +150,11 @@ body {
     align-items: center;
     width: 100%;
 }
+
 .review-img {
     margin-top: -28px;
 }
+
 .review-img:first-child {
     margin-top: 0;
 }
@@ -162,17 +180,26 @@ body {
     object-fit: cover;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     color: #fff !important;
-    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     transform: scale(0.7);
 }
 
 /* Pulse Animation */
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .pulse-anim {
@@ -197,33 +224,45 @@ body {
         font-size: 28px;
     }
 
+    #header .hero-img {
+        margin-top: -41px;
+        padding: 10px;
+    }
+
     #header .cta-button {
         margin-top: -88px;
         font-size: 20px;
         padding: 15px 60px;
     }
 
-    .spacer-top, .spacer-bottom {
+    .spacer-top,
+    .spacer-bottom {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
     /* Adjust overlapping margins slightly for mobile */
-    .negative-margin { margin-top: -15px; }
-    .negative-margin-btn { margin-top: -20px; }
-    .negative-margin-bonus { margin-top: -20px; }
-    .negative-margin-bonus-lg { margin-top: -30px; }
-    
-    .reviews .review-img { margin-top: -15px; }
-    .reviews .review-img:first-child { margin-top: 0; }
-}
-
-@media (max-width: 480px) {
-    #header .hero-img {
-        margin-top: -41px;
-        padding: 10px;
+    .negative-margin {
+        margin-top: -15px;
     }
-    #header .cta-button {
-        padding: 15px 40px;
+
+    .negative-margin-btn {
+        margin-top: -20px;
+    }
+
+    .negative-margin-bonus {
+        margin-top: -20px;
+    }
+
+    .negative-margin-bonus-lg {
+        margin-top: -30px;
+    }
+
+    .reviews .review-img {
+        margin-top: -15px;
+    }
+
+    .reviews .review-img:first-child {
+        margin-top: 0;
     }
 }
